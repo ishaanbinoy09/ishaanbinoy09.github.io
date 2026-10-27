@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ishaan Binoy | Building with AI</title>
+<meta name="description" content="Ishaan Binoy: student, builder and volunteer. AI research on bias in financial lending, a marketing and AI internship, and service work closing the digital divide.">
+<meta property="og:title" content="Ishaan Binoy | Building with AI">
+<meta property="og:description" content="I build with AI, and I keep asking who gets left out.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%BB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbfaf7; --surface:#ffffff; --ink:#1d2528; --muted:#5b676c;
+    --line:#e3e1da; --accent:#0f766e; --accent-soft:#e1f1ef; --ph:#fff3a3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#12181a; --surface:#1a2224; --ink:#eef1f0; --muted:#a3b0b4;
+           --line:#2b3639; --accent:#5eead4; --accent-soft:#16312f; --ph:#5c5316; }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "DM Sans",system-ui,sans-serif}
+  a{color:var(--accent);text-underline-offset:3px}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  header.nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 92%,transparent);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  header.nav .wrap{display:flex;gap:18px;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .brand{font-weight:700;text-decoration:none;color:var(--ink)}
+  nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-size:15px}
+  nav a:hover{color:var(--accent)}
+  .hero{padding:72px 0 40px}
+  .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+  h1{font:400 clamp(40px,8vw,68px)/1.05 "DM Serif Display",Georgia,serif;margin:10px 0 18px}
+  .lead{font-size:20px;color:var(--muted);max-width:640px;margin:0 0 24px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700}
+  @media (prefers-color-scheme: dark){.btn{color:#0b1213}}
+  .btn.ghost{background:transparent;color:var(--accent);border:2px solid var(--accent);margin-left:8px}
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  h2{font:400 32px/1.15 "DM Serif Display",Georgia,serif;margin:0 0 18px}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{margin:0 0 6px;font-size:19px}
+  .tag{display:inline-block;font-size:13px;background:var(--accent-soft);color:var(--accent);padding:2px 10px;border-radius:999px;margin-bottom:10px;font-weight:500}
+  .card p{margin:0 0 10px}
+  .meta{color:var(--muted);font-size:15px}
+  ul.clean{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  ul.clean li{padding-left:18px;position:relative}
+  ul.clean li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .chip{background:var(--surface);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:15px}
+  .places{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:6px}
+  .places a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}
+  .places a span{display:block;color:var(--muted);font-size:14px}
+  .places a:hover{border-color:var(--accent)}
+  .ph{background:var(--ph);padding:0 4px;border-radius:4px}
+  footer{padding:32px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+  @media (max-width:560px){nav a{margin-left:10px;font-size:14px}.hero{padding-top:44px}.btn.ghost{margin:10px 0 0}}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Ishaan Binoy</a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#service">Service</a><a href="#beyond">Beyond</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Student · Builder · Volunteer</div>
+    <h1>I build with AI, and I keep asking who gets left out.</h1>
+    <p class="lead">I'm a high school senior in North Carolina who loves turning technology into something useful, and who cares about the people on the other end of it.</p>
+    <a class="btn" href="#projects">See my work</a><a class="btn ghost" href="#contact">Get in touch</a>
+  </div>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>Freshman year, I got a C- on a biology test and stopped wanting to talk about school at all. I didn't fix that overnight. I moved to a school with a schedule that fit me better, went from eight classes to four at a time, and slowly my grades and my confidence came back.</p>
+    <p>Since then I've taught myself Python, built machine learning projects, refurbished laptops for families without them, and worked in a customer-facing job and a marketing internship at an AI company. Those experiences share one question that now drives me: when we build something, who is affected, and who gets left out?</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Research</span>
+        <h3>Bias in AI financial lending</h3>
+        <p>A student research project on how machine learning models can treat borrowers unfairly, mentored by an AI graduate student through <a href="https://www.inspiritai.com" rel="noopener">Inspirit AI</a>. Our paper is in preparation.</p>
+        <p class="meta"><strong>What I found:</strong> The models showed real financial literacy, but once their advice was personalized to a borrower, bias crept in, even where none appeared at first, and it traced back to patterns in their training data.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Team build</span>
+        <h3>AI music recommender</h3>
+        <p>In summer 2025, my international team built an AI music recommendation app at a virtual <a href="https://www.inspiritai.com" rel="noopener">Inspirit AI</a> camp. Hundreds of participants and audience members voted it best project.</p>      </article>
+      <article class="card">
+        <span class="tag">Machine learning</span>
+        <h3>Computer vision and ML models</h3>
+        <p>At <a href="https://www.idtech.com" rel="noopener">iD Tech</a> in Chapel Hill, NC (summer 2026), I built machine learning models in Python and TensorFlow, including real-time computer vision tools trained on large public datasets.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Launch support</span>
+        <h3>Rebrand launch analytics</h3>
+        <p>During the launch of a rebranded AI company, I helped track how the news was landing on LinkedIn. Weekly visibility rose about 30x to roughly 125,000 impressions in launch week.</p>
+        <p class="meta">I recommended using LinkedIn Page Analytics to measure what worked.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Work experience</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Jun to Aug 2026</span>
+        <h3>Marketing &amp; AI Intern, <a href="https://www.quadcentrix.com" rel="noopener">Quadcentrix</a></h3>
+        <p>Supported the go-to-market launch of an enterprise AI, blockchain and data consulting firm. I helped draft LinkedIn posts with the core team, prepared launch activities, and tracked post-launch visibility.</p>
+      </article>
+      <article class="card">
+        <span class="tag">2026</span>
+        <h3>Customer Service Associate, <a href="https://www.theupsstore.com" rel="noopener">The UPS Store</a></h3>
+        <p>Helped customers with shipping, printing and paperwork in a busy retail setting. It taught me that every decision a business makes lands on a real person at the counter.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="service">
+    <h2>Service and leadership</h2>
+    <ul class="clean">
+      <li><strong><a href="https://www.kramden.org" rel="noopener">Kramden Institute</a>, Durham NC.</strong> 75+ hours refurbishing donated computers for K-12 students and low-income adults. I was promoted to lead new volunteers.</li>
+      <li><strong>Food and shelter support.</strong> Weekend food packing at community centers and preparing homeless shelters, with <a href="https://www.chinmaya-rdu.org" rel="noopener">Chinmaya Mission RDU</a> and local food banks.</li>
+    </ul>
+  </section>
+
+  <section id="beyond">
+    <h2>Beyond the classroom</h2>
+    <div class="chips" role="list">
+      <span class="chip" role="listitem">🎻 Violin, 5+ years</span>
+      <span class="chip" role="listitem">⚽ Soccer</span>
+      <span class="chip" role="listitem">👕 Jersey collector</span>
+      <span class="chip" role="listitem">🌍 12+ countries visited</span>
+      <span class="chip" role="listitem">🥋 Taekwondo brown belt, working toward black</span>
+    </div>
+    <p style="margin-top:18px">I play violin in my school orchestra and I love soccer. When I travel to a new country, I try to bring home the jersey of my favorite player from that country, so my collection doubles as a map of where I've been.</p>
+  </section>
+
+  <section id="where">
+    <h2>Where I've learned and worked</h2>
+    <div class="places">
+      <a href="https://www.quadcentrix.com" rel="noopener">Quadcentrix<span>Marketing &amp; AI internship</span></a>
+      <a href="https://www.theupsstore.com" rel="noopener">The UPS Store<span>Customer service</span></a>
+      <a href="https://www.inspiritai.com" rel="noopener">Inspirit AI<span>Team project and research</span></a>
+      <a href="https://www.idtech.com" rel="noopener">iD Tech<span>Machine learning program</span></a>
+      <a href="https://www.kramden.org" rel="noopener">Kramden Institute<span>Volunteer lead</span></a>
+      <a href="https://www.chinmaya-rdu.org" rel="noopener">Chinmaya Mission RDU<span>Community volunteer</span></a>
+    </div>
+    <p class="meta" style="margin-top:14px">Links go to each organization's own site. I'm not affiliated with them beyond the experiences described here.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Let's connect</h2>
+    <p>If you'd like to talk about my work, I'd love to hear from you.</p>
+    <p>
+      <a class="btn" href="mailto:ishaanbinoy09@gmail.com">ishaanbinoy09@gmail.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/ishaan-binoy-4a6b7b424/" rel="noopener">LinkedIn</a>
+    </p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Ishaan Binoy · Last updated October 2026</div>
+</footer>
+</body>
+</html>
