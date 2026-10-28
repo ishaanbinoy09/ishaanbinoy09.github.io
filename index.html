@@ -31,7 +31,8 @@
     backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
   header.nav .wrap{display:flex;gap:18px;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
   .brand{font-weight:700;text-decoration:none;color:var(--ink)}
-  nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-size:15px}
+  nav{display:flex;flex-wrap:wrap;gap:2px 16px}
+  nav a{text-decoration:none;color:var(--muted);font-size:15px}
   nav a:hover{color:var(--accent)}
   .hero{padding:72px 0 40px}
   .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
@@ -59,7 +60,19 @@
   .places a:hover{border-color:var(--accent)}
   .ph{background:var(--ph);padding:0 4px;border-radius:4px}
   footer{padding:32px 0 56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
-  @media (max-width:560px){nav a{margin-left:10px;font-size:14px}.hero{padding-top:44px}.btn.ghost{margin:10px 0 0}}
+  .about{display:grid;grid-template-columns:1fr 230px;gap:28px;align-items:start}
+  .aside{margin:0}
+  .aside img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+  .aside figcaption{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.4}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+  .gallery figure{margin:0;position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--line);background:var(--surface);aspect-ratio:4/3}
+  .gallery figure.tall{grid-row:span 2;aspect-ratio:auto}
+  .gallery figure.wide{grid-column:1/-1;aspect-ratio:1600/864}
+  .gallery img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .gallery figure.tall img{object-position:50% 85%}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 10px;color:#fff;font-size:14px;line-height:1.35;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+  @media (max-width:640px){.about{grid-template-columns:1fr}.aside{max-width:260px}.gallery{grid-template-columns:1fr}.gallery figure.tall{grid-row:auto;aspect-ratio:3/4}}
+  @media (max-width:560px){nav{gap:2px 12px}nav a{font-size:14px}.hero{padding-top:44px}.btn.ghost{margin:10px 0 0}}
   @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -85,8 +98,16 @@
 
   <section id="about">
     <h2>About me</h2>
-    <p>Freshman year, I got a C- on a biology test and stopped wanting to talk about school at all. I didn't fix that overnight. I moved to a school with a schedule that fit me better, went from eight classes to four at a time, and slowly my grades and my confidence came back.</p>
-    <p>Since then I've taught myself Python, built machine learning projects, refurbished laptops for families without them, and worked in a customer-facing job and a marketing internship at an AI company. Those experiences share one question that now drives me: when we build something, who is affected, and who gets left out?</p>
+    <div class="about">
+      <div>
+        <p>Freshman year, I got a C- on a biology test and stopped wanting to talk about school at all. I didn't fix that overnight. I moved to a school with a schedule that fit me better, went from eight classes to four at a time, and slowly my grades and my confidence came back.</p>
+        <p>Since then I've taught myself Python, built machine learning projects, refurbished laptops for families without them, and worked in a customer-facing job and a marketing internship at an AI company. Those experiences share one question that now drives me: when we build something, who is affected, and who gets left out?</p>
+      </div>
+      <figure class="aside">
+        <img src="images/physics-stairs.jpg" width="1200" height="1600" loading="lazy" alt="Ishaan holding a stopwatch and a hand-drawn diagram of a staircase for a physics experiment">
+        <figcaption>Timing a stair climb for a physics experiment</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section id="projects">
@@ -150,6 +171,24 @@
       <span class="chip" role="listitem">🥋 Taekwondo red-black belt</span>
     </div>
     <p style="margin-top:18px">I play violin in my school orchestra and I love soccer. When I travel to a new country, I try to bring home the jersey of my favorite player from that country, so my collection doubles as a map of where I've been.</p>
+    <div class="gallery">
+      <figure class="tall">
+        <img src="images/travel-austria.jpg" width="1200" height="1600" loading="lazy" alt="Ishaan standing on a street in Austria in front of a peach-colored historic building with a red and white flag">
+        <figcaption>Exploring Austria</figcaption>
+      </figure>
+      <figure>
+        <img src="images/travel-switzerland-museum.jpg" width="1600" height="1200" loading="lazy" alt="Ishaan in a blue cap looking at antique engines in a museum in Switzerland">
+        <figcaption>Looking over early machinery at a museum in Switzerland</figcaption>
+      </figure>
+      <figure>
+        <img src="images/museum-motorcycle.jpg" width="1600" height="1200" loading="lazy" alt="Ishaan looking at a motorcycle sculpture decorated with antlers in an art museum">
+        <figcaption>Taking in an art museum exhibit</figcaption>
+      </figure>
+      <figure class="wide">
+        <img src="images/jersey-store-munich.jpg" width="1600" height="864" loading="lazy" alt="The FC Bayern Munich fan store on a street in Munich">
+        <figcaption>Jersey hunting at the FC Bayern store in Munich</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section id="where">
